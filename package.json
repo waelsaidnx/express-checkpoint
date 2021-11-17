@@ -1,0 +1,21 @@
+{
+  "name": "nodejscheckpoint",
+  "version": "1.0.0",
+  "description": "Checkpoint Express JS",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "scripts": {
+    "serve": "nodemon server.js"
+  },
+  "author": "Wael",
+  "license": "ISC"
+}
