@@ -8,9 +8,9 @@ function IsTimeRight(req, res, next){
     var time= b.getHours();
     var day= b.getDay();
     var weekDay=b.toDateString();
-    console.log("the day is :" + day );
-    console.log("the time is :" + time);
-    if (day!==6 && day!==0 && time<18 && time>9) {
+    var exactTime=b.toLocaleTimeString();
+    console.log("the date is :" + weekDay +" the day is number "+ day + " of the week and the time is : "+ exactTime);
+    if (day!==6 && day!==0 && time<20 && time>9) {
         next();
     } else {
         res.send("oops, We are currently closed , we will be open from Monday to Friday between 9 Am and 7 Pm. Please come back later");
